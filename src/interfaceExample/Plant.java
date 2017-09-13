@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package interfaceExample;
 
-/**
- *
- * @author Genna1
- */
-public class Plant {
+
+public interface Plant {
+    public void grow();
     
+    public void photosynthesize();
+    
+    public void produceFlowers();
 }
