@@ -3,36 +3,35 @@ package concreteExample;
 
 
 public class Plant {
-    private int numberOfLeaves;
-    private String color;
-    private String name;
-
-    public int getNumberOfLeaves() {
-        return numberOfLeaves;
+    private String scientificName;
+    private String genus;
+    
+    public Plant(String scientificName, String genus) {
+        setScientificName(scientificName);
+        setGenus(genus);
     }
 
-    public void setNumberOfLeaves(int numberOfLeaves) {
-        this.numberOfLeaves = numberOfLeaves;
+
+    public final String getScientificName() {
+        return scientificName;
     }
 
-    public String getColor() {
-        return color;
+    public final void setScientificName(String scientificName) {
+        this.scientificName = scientificName;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public final String getGenus() {
+        return genus;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public final void setGenus(String genus) {
+        this.genus = genus;
     }
     
+    
+    
     public void grow() {
-        //does some growing
+        
     }
     
     public void produceFlowers() {
