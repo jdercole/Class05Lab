@@ -15,10 +15,14 @@ public class Cactus extends Succulent {
     }
 
     public final void setNeedleType(String needleType) {
-        this.needleType = needleType;
+        if (needleType == null) {
+            throw new IllegalArgumentException("Needletype must have a value!");
+        } else {
+            this.needleType = needleType;
+        } 
     }
     
     public final void defendFromPredatorsWithNeedles() {
-        
+        this.getOutputService().doConsoleOutput("I have needles so animals don't eat me!");
     }
 }

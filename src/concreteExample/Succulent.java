@@ -9,6 +9,6 @@ public class Succulent extends Plant {
     }
     
     public void retainWater() {
-       //retain water     
+       this.getOutputService().doConsoleOutput("I'm retaining water as succulents do.");   
     }
 }
